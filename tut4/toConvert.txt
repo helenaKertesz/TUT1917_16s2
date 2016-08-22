@@ -1,0 +1,11 @@
+Binary -> Decimal
+100101101
+
+Decimal -> Binary
+567
+
+Hex -> Binary
+F6B9
+
+Binary -> Hex
+11010111011

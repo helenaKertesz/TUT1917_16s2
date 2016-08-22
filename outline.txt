@@ -1,0 +1,35 @@
+TODO
+
+- PM Sim
+- Sort out cover for wks 7 & 8
+- Talk to Nuno re: AT
+
+MARKING
+
+Style Marks for:
+- indenting ( 3 or 4 spaces )
+- Comments
+- # define's (no random numbers)
+- Use of Functions (I should be able to see a whole function on my screen)
+- Marks will be lost for poor variable names
+
+Lab Marks:
+- I will tick of things as done in the lab
+- Everything for a lab needs to be submitted by the start of the next lab
+- There may not be automark (it will be  the first  thing to go if Sim is stressed - tutors can help out)
+- There will be 1% per person for a presentation (do in lab pairs)
+
+ASSIGNMETS
+
+- ASS1: Yatzee (conditional statements and randomness (with seed) )
+- ASS2: Something linked-list
+        - To-do list
+        - Recipie Book
+
+- Lab Tests in weeks 6, 10 & 13
+
+GENERAL STUFF
+
+Nano has been recomened for remote use, gedit in the lab
+for loops are allowable, switch-case and multiple returns are the tutors call
+A Git repo will be set up for tutors to edit labs, tutes and assignment descriptions

@@ -1,0 +1,13 @@
+int input = 5
+
+
+int star = 0
+while( star < 5 ){
+  printf("*\n")
+  star++
+}
+
+int star;
+for(star = 0; star < 5; star++){
+  printf("*\n");
+}
