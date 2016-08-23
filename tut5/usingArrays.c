@@ -34,18 +34,12 @@ int main(){
    return 0;
 }
 
+/*#################### TODO: Write these Functions ####################*/
 
 //Searches for and return  the maximum value in an array.
 int max_value( int n, int a[] ){
-   int max = a[0];
-   int i = 0;
-   while(  i < n ){
-      if( a[i] > max){
-         max = a[i];
-      }
-      i++;
-   }
-   return max;
+
+   return 0;
 }
 
 
@@ -71,3 +65,24 @@ void displayArray( int * array, int size){
    }
    printf(" }\n");
 }
+
+/*#####################################################################*/
+
+/* SOLUTIONS
+ *
+ * M13A
+ * int max_value( int n, int a[] ){
+ *    int max = a[0];
+ *    int i = 0;
+ *    while(  i < n ){
+ *       if( a[i] > max){
+ *          max = a[i];
+ *       }
+ *       i++;
+ *    }
+ *    return max;
+ * }
+ *
+ * WED13A
+ *
+ */

@@ -1,4 +1,6 @@
 /*
+ * TODO
+ *
  * yay pointers!!
  * written by Helena Kertesz
  *

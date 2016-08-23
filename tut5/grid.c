@@ -29,27 +29,16 @@ int main(int argc, char *argv[]) {
    return EXIT_SUCCESS;
 }
 
+/*#################### TODO: Write this Function ######################*/
+
 // Searches for a number in the grid
-// TODO Implement Me :)
 int find_in_grid( int n, int grid[SIZE][SIZE], int size ){
 
-   int col;
-   int row;
-   int state = 0;
-
-   for( col = 0; col < size; col++){
-      for( row = 0; row < size; row++){
-         if(  grid[col][row] == n ){
-            state = 1;
-         }
-      }
-   }
-
-
-   return state;
+   return 0;
 }
 
 
+/*#####################################################################*/
 
 
 
@@ -95,3 +84,27 @@ void print_grid(int grid[SIZE][SIZE], int size){
    }
 
 }
+
+/* SOLUTIONS
+ *
+
+M13A
+
+int find_in_grid( int n, int grid[SIZE][SIZE], int size ){
+
+   int col;
+   int row;
+   int state = 0;
+
+   for( col = 0; col < size; col++){
+      for( row = 0; row < size; row++){
+         if(  grid[col][row] == n ){
+            state = 1;
+         }
+      }
+   }
+
+   return state;
+}
+
+*/

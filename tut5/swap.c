@@ -1,3 +1,9 @@
+/*
+ * This Program takes two numbers aand swaps them using a function
+ * to do this pointers must be used
+ *
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -16,9 +22,34 @@ int main(){
    return 0;
 }
 
+/*#################### TODO: Write this Function ######################*/
+
 // This function swaps two numbers using pointers
 void swap ( int * first, int * second){
-   int temp = *first;
-   *first = *second;
-   *second = temp;
+
 }
+
+/*#####################################################################*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SOLUTIONS
+ *
+ * M13A
+ * void swap ( int * first, int * second){
+ *    int temp = *first;
+ *    *first = *second;
+ *    *second = temp;
+ * }
+ *
+ */
