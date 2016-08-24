@@ -19,17 +19,7 @@
 #include "firstWillBeLast.h"
 
 nodePtr frontToBack (nodePtr list) {
-    nodePtr first = list;
-    nodePtr second = list;
-    nodePtr last = list;
-    if( list != NULL && list->next != NULL){
-        while( last->next != NULL ){
-            last = last->next;
-        }
-        second = first->next;
-        last->next = first;
-        first->next = NULL;
-    }
-    return second;
+   // your code here
+   return NULL;
 
 }

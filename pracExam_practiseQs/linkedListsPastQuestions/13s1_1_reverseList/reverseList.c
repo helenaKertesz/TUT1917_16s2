@@ -14,6 +14,4 @@
 #include "reverseList.h"
 
 list reverse (list inputList) {
-   list prev = inputlist;
-   list curr = inputlist
 }
