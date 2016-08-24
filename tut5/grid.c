@@ -33,8 +33,18 @@ int main(int argc, char *argv[]) {
 
 // Searches for a number in the grid
 int find_in_grid( int n, int grid[SIZE][SIZE], int size ){
+   int x, y;
+   int state = 0;
 
-   return 0;
+   for( x = 0; x < size; x++){
+      for( y = 0; y < size; y++){
+         if( grid[x][y] == n ){
+            state = 1;
+         }
+      }
+   }
+
+   return state;
 }
 
 
