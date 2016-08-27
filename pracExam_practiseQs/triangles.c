@@ -4,6 +4,7 @@
  * letter aand going in accending alphabetical order
  *
  * If the letter given is lowercase it should convert it to uppercase
+ * The code in main already does error handling for if the input is not a letter
  *
  * ie:
  * INPUT: 6 G
@@ -26,7 +27,7 @@
  */
 
 #include <stdio.h>
-
+#include <ctype.h>
 
 /*-----------------------------------------*/
 //YOUR CODE HERE
@@ -42,11 +43,12 @@ int main(){
    int size;
    char letter;
 
-   printf("Enter size of Triangle:");
+   printf("Enter size of Triangle: ");
    scanf("%d", &size);
-   printf("Enter Letter to Start on:");
-   scanf("%c", &letter);
-
+   printf("Enter Letter to Start on: ");
+   getchar(); //gets rid of newline
+   letter = getchar();
+   printf("You entered %d and %c\n", size, letter);
 
    if( isalpha(letter) ){
       printTriangle( letter, size);
