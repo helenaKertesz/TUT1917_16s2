@@ -59,6 +59,10 @@ void printList(Node head){
 
 // returns the length of a linked list
 int length(Node head){
+   Node temp = head;
+   while( temp != NULL ){
+      temp = temp->next;
+   }
    // TODO
    return 0;
 }

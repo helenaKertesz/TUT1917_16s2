@@ -16,22 +16,32 @@ struct node{
 };
 
 // List struct data structure
-/*
- * typedef struct list* List
- *
- * struct list{
- * Lnode head;
- * int numNodes;
- * };
- *
- */
+
+typedef struct list* List
+
+struct list{
+   Lnode head;
+   int numNodes;
+};
 
 
-// Function Prototypes
+
+
+// Function Prototypes LAB 9
 Lnode newNode(int value);
 Lnode prepend(Lnode head, Lnode newNode);
-Lnode append(Lnode head, Lnode newNode);
-void  printList(Lnode head);
-Lnode deleteNode(Lnode head, int val);
+//Lnode append(Lnode head, Lnode newNode);
+//void  printList(Lnode head);
+//Lnode deleteNode(Lnode head, int val);
 Lnode concat( Lnode L, Lnode M );
-Lnode reverse( Lnode head );
+//Lnode reverse( Lnode head );
+
+// Function Prototypes LAB 10
+List newList();
+List append( List l, Lnode newNode );
+void printList(List l);
+void deleteNode(List l, int val);
+void shuffle_merge(List l, List m);
+void reverse(List l);
+void swap(List l);
+

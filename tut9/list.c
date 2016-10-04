@@ -6,59 +6,54 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-// #include "list.h"
-
-// Simple Node Data Structure
-typedef struct node* Lnode;
-
-struct node{
-   int val;
-   Lnode next;
-};
-
-// List struct data structure
-/*
- * typedef struct list* List
- *
- * struct list{
- * Lnode head;
- * int numNodes;
- * };
- *
- */
-
-// Function Prototypes
-Lnode newNode(int value);
-Lnode prepend(Lnode head, Lnode newNode);
-Lnode append(Lnode head, Lnode newNode);
-void  printList(Lnode head);
-Lnode deleteNode(Lnode head, int val);
-Lnode concat( Lnode L, Lnode M );
-Lnode reverse( Lnode head );
+#include "list.h"
+#include <assert.h>
 
 // dynamically allocates new node and initialise it.
 Lnode newNode(int value){
-   return NULL;
+   Lnode n = malloc(sizeof(struct node));
+   assert(n != NULL);
+   n->val = value;
+   n->next = NULL;
+   return n;
 }
 
 // prepends new node to an existing list.
 Lnode prepend(Lnode head, Lnode newNode){
+   newNode->next = head;
+   head = newNode;
    return head;
 }
 
 // appends new node to an existing list.
 Lnode append(Lnode head, Lnode newNode){
+   if(head == NULL){ //empty list case
+      head = newNode;
+   }else{ // all other cases
+      Lnode curr = head;
+      while(curr->next != NULL){
+         curr = curr->next;
+      }
+      curr->next = newNode;
+   }
    return head;
 }
 
 // prints existing list.
 void printList(Lnode head){
-
+   Lnode current = head;
+   while( current != NULL ){
+      printf("%d\n", current -> val);
+      current = current -> next;
+   }
 }
 
 // removes the first occurence of val in a list.
 Lnode deleteNode(Lnode head, int val){
-   return head;
+   Lnode curr = head;
+   if( curr == NULL ){ // do nothing in the case  of an empty list
+
+   }
 }
 
 // concatenates two linked lists L and M into a single list containing
