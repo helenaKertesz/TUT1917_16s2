@@ -8,6 +8,7 @@
  */
 
 // Simple Node Data Structure
+
 typedef struct node* Lnode;
 
 struct node{
@@ -17,7 +18,7 @@ struct node{
 
 // List struct data structure
 
-typedef struct list* List
+typedef struct list* List;
 
 struct list{
    Lnode head;
@@ -29,16 +30,16 @@ struct list{
 
 // Function Prototypes LAB 9
 Lnode newNode(int value);
-Lnode prepend(Lnode head, Lnode newNode);
+//Lnode prepend(Lnode head, Lnode newNode);
 //Lnode append(Lnode head, Lnode newNode);
 //void  printList(Lnode head);
 //Lnode deleteNode(Lnode head, int val);
-Lnode concat( Lnode L, Lnode M );
+//Lnode concat( Lnode L, Lnode M );
 //Lnode reverse( Lnode head );
 
 // Function Prototypes LAB 10
 List newList();
-List append( List l, Lnode newNode );
+void append( List l, Lnode newNode );
 void printList(List l);
 void deleteNode(List l, int val);
 void shuffle_merge(List l, List m);
