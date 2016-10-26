@@ -22,7 +22,7 @@ int main(){
    return 0;
 }
 
-// When this function is called a new "stack frame" (essentially a chunch of memory) is created in which
+// When this function is called a new "stack frame" (essentially a chunch of memory) is created in which loccal varibales are stored
 int addNumbers( int a, int b ){
    sum = a + b;
    return sum;

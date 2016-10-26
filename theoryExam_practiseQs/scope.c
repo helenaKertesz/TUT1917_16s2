@@ -19,7 +19,7 @@ int main(){
 
     b = rawr(a, b);
 
-    printf("%d\n", b); //what will this print?
+    printf("b = %d\n", b); //what will this print?
 
     return 0;
 }

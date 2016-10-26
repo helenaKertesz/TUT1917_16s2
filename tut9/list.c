@@ -84,46 +84,71 @@ Lnode reverse( Lnode head ){
 
 // This function returns a new List Struct
 List newList(){
-   return NULL;
+   List newList = malloc( sizeof( struct list ) );
+   assert( newList != NULL );
+   newList->numNodes = 0;
+   newList->head = NULL;
+   return newList;
 }
 
 // This function appends a node to the list
 void append( List l, Lnode newNode ){
 
-   // From Lab 9
-   /*if(head == NULL){  //empty list case
-      head = newNode;
+   assert( l != NULL);
+   if(l->head == NULL){  //empty list case
+      l->head = newNode;
    } else {             // all other cases
-      Lnode curr = head;
+      Lnode curr = l->head;
       while(curr->next != NULL){
          curr = curr->next;
       }
       curr->next = newNode;
    }
-   return head;*/
 }
 
 //  This function prints out the list
 void printList(List l){
 
-   // From Lab 9
-   /*Lnode current = head;
+   assert ( l != NULL );
+   Lnode current = l->head;
    while( current != NULL ){
       printf("[%d] -> ", current -> val);
       current = current -> next;
    }
    printf("X\n");
-   */
 }
 
 
 void deleteNode(List l, int val){
 
    // Empty List
-   // One node list
-   // Deleting first node
-   // Every other case
+   if( l->head != NULL){
 
+      // One node list
+      if( l->head->next == NULL && l->head->val == val ){
+         free(l->head);
+         l->head = NULL;
+         l->numNodes = 0;
+         // Deleting first node
+      } else if( l->head->val == val ){
+         Lnode temp = l->head;
+         l->head = l->head->next;
+         free(temp);
+         l->numNodes--;
+      } else {
+         // Every other case
+         Lnode temp = l->head;
+         while( temp->next != NULL && temp->next->val != val ){
+            temp =  temp->next;
+         }
+
+         if( temp->next != NULL){
+            Lnode toDelete = temp->next;
+            temp->next = toDelete->next;
+            free( toDelete );
+         }
+      }
+   }
 }
 
 

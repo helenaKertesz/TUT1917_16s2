@@ -1,5 +1,5 @@
 /*
- * There are two errors in the codde that the compiler will not catch. Find and correct them.
+ * There are two errors in the code that the compiler will not catch. Find and correct them.
  *
  * This program takes in how many cats  there are initally, finds how many cats there
  * will be after each pair has had a litter of kittens, and then prints out how many

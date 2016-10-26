@@ -67,7 +67,7 @@ int main(){
 
 
     char * bar = "cats";
-    printf( BLUE "\nchar * bar = \"cats\"\n" RESET );           // FUN FACT: to print out the " you must put a \ before it (the same thing goes for printing out \ on line 54)
+    printf( BLUE "\nchar * bar = \"cats\"\n" RESET );           // FUN FACT: to print out the " you must put a \ before it (the same thing goes for printing out \ on line 57)
 
     printf("printing bar as a string gives: %s\n", bar);
     printString(bar);
@@ -86,9 +86,9 @@ int main(){
     printf("\n");
 
     // Only uncomment the next three lines if you want to do Q18 EXTENTION or just try it out. Run it serval times to see if it changes. This may cause a seg fault (or may not).
-    //printf("\nprinting foo using badPrint (must uncomment)\n");
-    //badPrint(foo);
-    //printf("\n");
+    // printf("\nprinting foo using badPrint (must uncomment)\n");
+    // badPrint(foo);
+    // printf("\n");
 
     return 0;
 }
